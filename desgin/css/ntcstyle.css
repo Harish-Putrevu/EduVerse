@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark tech background */
+  color: #ffffff;
+}
+
+.notice-board {
+  max-width: 700px;
+  margin: 50px auto;
+  background: linear-gradient(145deg, #2a2a2a, #3b3b3b); /* Dark glossy background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #9b4dff; /* Neon purple border */
+}
+
+.notice-board h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #9b4dff; /* Neon purple */
+  text-shadow: 0 0 8px #9b4dff, 0 0 12px #7a36cc;
+}
+
+.notice-board ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notice-board li {
+  background: linear-gradient(90deg, #232323, #393939); /* Gradient for each notice */
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.notice-board li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(155, 77, 255, 0.3), 0 0 10px rgba(155, 77, 255, 0.6);
+  border: 1px solid #9b4dff;
+}
+
+.notice-board .title {
+  font-weight: bold;
+  color: #ff6ec7; /* Vibrant pinkish-purple for titles */
+  text-shadow: 0 0 6px #ff6ec7;
+}
+
+.notice-board li::before {
+  content: '💜';
+  font-size: 18px;
+  color: #9b4dff;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.notice-board button {
+  background-color: #9b4dff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.notice-board button:hover {
+  background-color: #7a36cc;
+  box-shadow: 0 4px 8px rgba(155, 77, 255, 0.3);
+}
