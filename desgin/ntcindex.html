@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Notice Board</title>
+
+   <!-- Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   
+   <!-- Custom CSS file link -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/ntcstyle.css">
+</head>
+<body>
+
+<header class="header">
+   <section class="flex">
+      <a href="home.html" class="logo">EduVerse</a>
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search notices..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+   </section>
+</header>
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+</div>
+
+<section class="notice-board">
+   <h1 class="heading">Notice Board</h1>
+   <div class="container">
+      <ul>
+         <li>
+            <span class="title">Coding Competition:</span> Participate in the National Hackathon 2025. Register by February 10th.
+            <button>Participate</button>
+         </li>
+         <li>
+            <span class="title">Research Paper Vacancy:</span> Join Prof. A.K. Sharma’s research project on AI. Apply before February 15th.
+            <button>Apply Now</button>
+         </li>
+         <li>
+            <span class="title">Internship Opportunity:</span> Web development internship at TechX. Apply by January 31st.
+            <button>Apply Now</button>
+         </li>
+         <li>
+            <span class="title">Workshop:</span> Attend a Blockchain Basics workshop on February 5th.
+            <button>Register</button>
+         </li>
+         <li>
+            <span class="title">Job Fair:</span> On-campus placement drive for CSE students on February 20th.
+            <button>Join</button>
+         </li>
+         <li>
+            <span class="title">Seminar:</span> Big Data Analytics seminar by Dr. Ramesh Gupta on February 8th.
+            <button>Register</button>
+         </li>
+         <li>
+            <span class="title">Online Course:</span> Free Python programming course starting February 1st.
+            <button>Enroll</button>
+         </li>
+         <li>
+            <span class="title">Project Showcase:</span> Final-year project presentation on March 1st.
+            <button>View Details</button>
+         </li>
+         <li>
+            <span class="title">Scholarship Opportunity:</span> Apply for the TechLeads scholarship by February 25th.
+            <button>Apply</button>
+         </li>
+         <li>
+            <span class="title">Coding Contest:</span> Google Code Jam practice session on February 12th.
+            <button>Participate</button>
+         </li>
+      </ul>
+   </div>
+</section>
+
+<footer class="footer">
+   "Empowering Education with AI – Learn, Evolve, Excel | Eduverse AI"
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+</body>
+</html>

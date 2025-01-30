@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AI Study Planner</title>
+
+   <!-- Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   
+   <!-- Custom CSS file link -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/prgstyle.css">
+</head>
+<body>
+
+<header class="header">
+   <section class="flex">
+      <a href="home.html" class="logo">EduVerse</a>
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+   </section>
+</header>
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+</div>
+
+<section class="planner">
+   <h1 class="heading">AI Study Progress</h1>
+   <div class="container">
+      <div class="box">
+         <div class="shadow"></div>
+         <div class="content">
+            <div class="percent" data-text="Course Completion" style="--num: 85">
+               <div class="dot"></div>
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+               </svg>
+            </div>
+            <div class="number">
+               <h2>85<span>%</span></h2>
+            </div>
+         </div>
+      </div>
+      <div class="box">
+         <div class="shadow"></div>
+         <div class="content">
+            <div class="percent" data-text="Certification" style="--num: 57">
+               <div class="dot"></div>
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+               </svg>
+            </div>
+            <div class="number">
+               <h2>57<span>%</span></h2>
+            </div>
+         </div>
+      </div>
+      <div class="box">
+         <div class="shadow"></div>
+         <div class="content">
+            <div class="percent" data-text="Goal Checkpoints" style="--num: 30">
+               <div class="dot"></div>
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+               </svg>
+            </div>
+            <div class="number">
+               <h2>30<span>%</span></h2>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<footer class="footer">
+   "Empowering Education with AI – Learn, Evolve, Excel | Eduverse AI"
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+</body>
+</html>
